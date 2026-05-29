@@ -17,6 +17,8 @@ public class Main {
             return;
         }
         System.out.println("Access Granted. Welcome to the Smart Home System.");
+        System.out.println();
+        System.out.println();
 
         ArrayList<Device> rooms = new ArrayList<>();
         rooms.add(new Light("Living Room"));
@@ -28,7 +30,10 @@ public class Main {
         do {
             LocalDateTime now = LocalDateTime.now();
             String timeStr = now.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
-            System.out.println("--- SELECT A ROOM --- ");
+System.out.println("|========================================|");
+System.out.println("|=   SMART HOME CONTROL SYSTEM          =|");
+System.out.println("|========================================|");
+System.out.println();
             System.out.println("Current Time: " + timeStr);
 
             for (int k = 0; k < rooms.size(); k++) {
