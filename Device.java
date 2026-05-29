@@ -26,6 +26,18 @@ abstract class Device {
     public String getTimerStartedAt() {
         return timerStartedAt; }
 
+    public void setRoomName(String roomName) {
+        this.roomName = roomName;
+    }
+
+    public void setLastTimeConfigured(int duration) {
+        this.lastTimeConfigured = duration;
+    }
+
+    public void setTimerStartedAt(String time) {
+        this.timerStartedAt = time;
+    }
+
     public void turnOn() {
         this.status = true;
     }
